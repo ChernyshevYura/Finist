@@ -4,20 +4,6 @@
 <iframe id="form_insurance" src="//mitmi.online/form-insurance/?login=6440221" frameborder="0" height="100%" width="100%" scrolling="no"></iframe>
 <script src="//mitmi.online/static/iframe/parent.js"></script>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<hr>
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<hr>
 
 
 <?php
