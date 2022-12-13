@@ -77,13 +77,13 @@ require_once("config.php");
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="day-pass" name="day-pass" type="text" autocomplete="off">
+    <input class="day_pass" name="day_pass" type="text" autocomplete="off">
     <span>Дата выдачи</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="who-pass" name="who-pass" type="text" autocomplete="off">
+    <input class="who_pass" name="who_pass" type="text" autocomplete="off">
     <span>Кем выдан(Пример:МВД ПО РЕСП. МОРДОВИЯ)</span>
     <span class="jsClearInput"></span>
   </fieldset>
@@ -119,36 +119,34 @@ require_once("config.php");
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="top-pressure" name="top-pressure" type="text" autocomplete="off">
+    <input class="top_pressure" name="top_pressure" type="text" autocomplete="off">
     <span>Верхнее давление</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="bottom-pressure" name="bottom-pressure" type="text" autocomplete="off">
+    <input class="bottom_pressure" name="bottom_pressure" type="text" autocomplete="off">
     <span>Нижнее давление</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="employment-status" name="employment-status" type="text" autocomplete="off">
+    <input class="employment_status" name="employment_status" type="text" autocomplete="off">
     <span>Статус занятости</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="activity-kind" name="activity-kind" type="text" autocomplete="off">
+    <input class="activity_kind" name="activity_kind" type="text" autocomplete="off">
     <span>Вид деятельности</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
-
-
   <?php
    $banks = $request->GetData($config::url_banks);
-   echo('<span>Banks</span><br><select name="insurance">');
+   echo('<span>Banks</span><br><select name="bank">');
    foreach($banks as $item){
-     echo '<option value="strtolower($item[\'name\'])">' . $item['name'] . '</option>';
+     echo '<option value="'.strtolower($item['name']).'">' . $item['name'] . '</option>';
    }
    echo('</select>');
   ?>
@@ -160,19 +158,19 @@ require_once("config.php");
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="contract-number" name="contract-number" type="text" autocomplete="off">
+    <input class="contract_number" name="contract_number" type="text" autocomplete="off">
     <span>Номер договора</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="date-start" name="date-start" type="text" autocomplete="off">
+    <input class="date_start" name="date_start" type="text" autocomplete="off">
     <span>Дата начала договора</span>
     <span class="jsClearInput"></span>
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="date-stop" name="date-stop" type="text" autocomplete="off">
+    <input class="date_stop" name="date_stop" type="text" autocomplete="off">
     <span>Дата окончиния договора</span>
     <span class="jsClearInput"></span>
   </fieldset>
@@ -184,7 +182,7 @@ require_once("config.php");
   </fieldset>
 
   <fieldset class="fildset_input">
-    <input class="polis-start" name="polis-start" type="text" autocomplete="off">
+    <input class="polis_start" name="polis_start" type="text" autocomplete="off">
     <span>Начало действия полиса</span>
     <span class="jsClearInput"></span>
   </fieldset>
